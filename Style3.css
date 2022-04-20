@@ -1,0 +1,62 @@
+*{
+  box-sizing: border-box;
+  margin: o;
+  padding: o;
+}
+html {
+  font-size: 62.5%
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.C1, .C2, .C3, .C4, .C5 {
+  width: 100%;
+  min-width: 150px;
+  height: 150px;
+}
+.C4 {
+  height: auto;
+}
+.C1 {
+  background-color: magenta;
+}
+.C2 {
+  background-color:  green;
+}
+.C3 {
+  background-color: blue;
+}
+.C4 {
+  background-color: yellow;
+}
+.C5 {
+  background-color: red;
+}
+@media (min-width:600px) {
+  .C1{
+    width: 25%;
+  }
+  .C4 {
+    width: 74%;
+  }
+  .C5 {
+    width: 100%;
+  }
+@media (min-width: 800px) {
+  .container {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .C1{
+    width: 50%;
+    order: 1;
+  }
+  .C4 {
+    width: 100%;
+  }
+  .C5 {
+    width: 50%;
+    order: 2;
+  }
